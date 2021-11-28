@@ -1,0 +1,115 @@
+.footer {
+  padding: 2rem;
+  background-color: rgb(34, 34, 34);
+  color: white;
+  position: relative;
+  z-index: 500;
+  &__box {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: rgb(155, 155, 155);
+      position: absolute;
+      bottom: 12%;
+      left: 0;
+      z-index: 600;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+  }
+  &__logo {
+    width: 20%;
+    align-self: center;
+  }
+  &__lists {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 300;
+    line-height: 1.8;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+  }
+  &__item {
+    line-height: 1.8;
+  }
+  &__link {
+    font-size: $font-medium;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: $color-ofwhite;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+  &__rejester {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", cursive;
+    margin-bottom: 2rem;
+  }
+  &__label {
+    font-size: 2.7rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-right: 0.6em;
+  }
+  &__input {
+    padding: 1.2rem 1rem;
+    min-width: 30rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: rgb(211, 211, 211);
+      font-size: 1.5rem;
+    }
+  }
+  &__btn {
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    &:hover {
+      background-color: darken($color-primary, 10%);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & h4 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-right: 4rem;
+    }
+  }
+}

@@ -1,0 +1,332 @@
+@media screen and (max-width: 1600px) {
+  .header {
+    &__logo {
+      margin-right: auto;
+    }
+    .nav {
+      display: none;
+    }
+    .signin {
+      margin-left: 3rem;
+      margin-right: 7rem;
+    }
+    .nav-icon {
+      display: inline-block;
+    }
+    .greating {
+      margin-top: 12rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .header {
+    .greating {
+      &__title {
+        font-size: $heading-xxlarge;
+      }
+      &__paragraph {
+        font-size: $font-small;
+      }
+      &__btn {
+        font-size: $font-small;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .footer {
+    &__box {
+      flex-direction: column;
+      &::after {
+        bottom: 8%;
+      }
+    }
+    &__form {
+      margin-bottom: 4rem;
+    }
+    &__content {
+      margin-bottom: 4rem;
+    }
+    &__input {
+      width: 50rem;
+      padding: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .header {
+    .greating {
+      &__title {
+        font-size: $heading-xlarge;
+      }
+      &__paragraph {
+        font-size: $font-small;
+      }
+      &__btn {
+        font-size: $font-xsmall;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .header {
+    .greating {
+      margin-top: 15rem;
+      &__title {
+        font-size: 4rem;
+      }
+      &__paragraph {
+        font-size: $font-xsmall;
+      }
+      &__btn {
+        font-size: $font-xsmall;
+        padding: 1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .header {
+    .search {
+      &__input {
+        display: none;
+      }
+      &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        padding: 1rem;
+        border-radius: 50%;
+      }
+    }
+    .greating {
+      flex-direction: column-reverse;
+      margin-top: 8rem;
+      &__message {
+        margin: auto;
+        width: 50rem;
+      }
+      &__paragraph {
+        font-size: $font-small;
+      }
+      &__img {
+        width: 70%;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  .footer {
+    &__logo {
+      width: 30%;
+    }
+    &__content {
+      flex-direction: column;
+    }
+    &__item {
+      margin-right: 3rem;
+    }
+  }
+  .project {
+    flex-direction: column;
+
+    &__img {
+      margin-bottom: 4rem;
+    }
+  }
+  .project--2 {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .service-box {
+    margin: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    .signin {
+      margin: 0 2rem;
+    }
+
+    .greating {
+      &__message {
+        width: 40rem;
+      }
+      &__title {
+        font-size: 3rem;
+      }
+      &__paragraph {
+        font-size: $font-xsmall;
+      }
+      &__img {
+        width: 80%;
+      }
+    }
+  }
+  .footer {
+    &__logo {
+      width: 40%;
+      margin-bottom: 3rem;
+    }
+    &__lists {
+      flex-direction: column;
+      transform: translateX(5rem);
+    }
+    &__list {
+      margin-bottom: 3rem;
+    }
+    &__content {
+      flex-direction: column;
+    }
+    &__item {
+      margin-right: 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header {
+    &__logo {
+      width: 15rem;
+    }
+    .search {
+      &__btn {
+        display: none;
+      }
+    }
+    .greating {
+      &__img {
+        margin-bottom: 8rem;
+      }
+    }
+  }
+  .our-services {
+    flex-direction: column;
+  }
+  .footer {
+    &__box {
+      &::after {
+        bottom: 5%;
+      }
+    }
+    &__input {
+      width: 10rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    &__logo {
+      width: 12rem;
+    }
+    .signin {
+      font-size: $font-xsmall;
+    }
+
+    .greating {
+      margin-top: 13rem;
+      &__message {
+        max-width: 30rem;
+      }
+      &__img {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    &__logo {
+      width: 8rem;
+    }
+    .signin {
+      margin-left: 0;
+    }
+    .greating {
+      &__paragraph {
+        width: 25rem;
+      }
+    }
+  }
+  .about {
+    padding: 6rem 4rem;
+    &__title {
+      font-size: 1rem;
+      margin-bottom: 4rem;
+    }
+    &__paragraph {
+      font-size: 1.8rem;
+      margin: 4rem 0;
+    }
+  }
+
+  .categories {
+    &__box {
+      margin-bottom: 4rem;
+    }
+
+    &__img {
+      width: 20rem;
+      height: 15rem;
+    }
+  }
+  .project {
+    &__img {
+      width: 20rem;
+      height: 15rem;
+    }
+  }
+
+  .footer {
+    &__input {
+      display: none;
+    }
+    &__copy {
+      & h4 {
+        font-size: 0.8rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .header {
+    .nav-container {
+      padding: 1rem 2rem;
+    }
+    .signin {
+      transform: translateX(2.4rem);
+    }
+    .greating {
+      padding: 1rem;
+    }
+  }
+  .about,
+  .our-works,
+  .project,
+  .categories,
+  .footer {
+    padding: 1rem;
+  }
+  .nav-icon {
+    margin-left: 2rem;
+  }
+  .mobile-menu {
+    justify-content: start;
+    width: 50%;
+    &__link {
+      font-size: $font-medium;
+    }
+  }
+}

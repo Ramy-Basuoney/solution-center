@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  i {
+    color: white;
+    font-size: 3rem;
+  }
+}
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}

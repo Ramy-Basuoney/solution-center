@@ -1,0 +1,178 @@
+.header {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba($color-black, 0.8),
+      rgba($color-black, 0.5)
+    ),
+    url("../img/header-background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+  }
+  &__logo {
+    width: 20rem;
+  }
+  .nav {
+    &__list {
+      display: flex;
+      list-style: none;
+    }
+    &__item {
+      margin-right: 4rem;
+    }
+    &__link {
+      position: relative;
+      font-size: $font-medium;
+      font-weight: $font-bolder;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $color-ofwhite;
+      transition: all 0.3s;
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $color-primary;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: all 0.3s;
+      }
+      &:hover:after {
+        width: 100%;
+      }
+    }
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    &__input {
+      padding: 1rem;
+      min-width: 30rem;
+      border: none;
+      border-radius: 0.5rem;
+      &:focus {
+        outline: none;
+      }
+    }
+    &__btn {
+      background-color: $color-white;
+      border: none;
+      transform: translateX(-3rem);
+      cursor: pointer;
+    }
+    &__icon {
+      width: 1.7rem;
+      height: 1.7rem;
+    }
+  }
+  .signin {
+    &:hover {
+      background-color: darken($color-primary, 10%);
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .greating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+    padding: 0 6rem;
+    &__message {
+      margin-right: 4rem;
+      width: 80rem;
+    }
+    &__title {
+      margin-bottom: 1rem;
+      font-size: $heading-huge;
+      font-weight: $font-light;
+      font-family: "Bebas Neue", cursive;
+      line-height: 1;
+      text-transform: capitalize;
+      color: $color-ofwhite;
+      animation: topfade;
+      animation-duration: 0.7s;
+      animation-timing-function: ease-out;
+    }
+    &__paragraph {
+      margin-bottom: 2rem;
+      font-size: $font-large;
+      font-weight: $font-light;
+      line-height: 1.8;
+      color: $color-ofwhite;
+      animation: bottomfade;
+      animation-duration: 0.7s;
+      animation-timing-function: ease-out;
+    }
+    &__btn {
+      animation: bottomfade;
+      animation-duration: 0.7s;
+      animation-timing-function: ease-out;
+      &:hover {
+        background-color: darken($color-primary, 10%);
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &__img {
+      width: 50%;
+      filter: brightness(90%);
+      animation-name: baner;
+      animation-duration: 0.7s;
+      animation-timing-function: ease-out;
+    }
+  }
+}
+.nav-icon {
+  font-size: 3rem;
+  color: white;
+  display: none;
+}
+.mobile-menu {
+  padding: 4rem 2rem;
+  background-image: linear-gradient(to top right, $color-primary, $color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 50%;
+  height: 100vh;
+  transform: translate(100%, 0%);
+  transition: all 0.7s;
+  &__list {
+    list-style: none;
+  }
+  &__link {
+    position: relative;
+    color: $color-ofwhite;
+    font-size: $heading-large;
+    text-decoration: none;
+    text-transform: capitalize;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $color-ofwhite;
+      height: 3px;
+      width: 0;
+      left: 0;
+      bottom: -10px;
+      transition: all 0.3s;
+    }
+    &:hover:after {
+      width: 100%;
+    }
+  }
+}
