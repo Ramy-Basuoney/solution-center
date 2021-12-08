@@ -77,8 +77,8 @@
   margin-bottom: 6rem;
   &__img {
     transition: all 0.3s;
-    max-height: 20rem;
-    max-width: 30rem;
+    height: 20rem;
+    width: 30rem;
     margin-right: 3rem;
     border-radius: 2rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.472);
@@ -132,21 +132,19 @@
   text-align: center;
   background-color: rgb(212, 212, 212);
   &__container {
-    width: 80%;
-    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
   }
   &__box {
+    position: relative;
+    z-index: 200;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 200;
-
+    margin: 2rem 1rem;
     &::after {
       content: "+";
       font-size: 6rem;
@@ -154,12 +152,12 @@
       justify-content: center;
       align-items: center;
       color: white;
-      width: 34rem;
-      height: 24rem;
+      width: 35rem;
+      height: 22rem;
       background-color: rgba(0, 0, 0, 0.52);
       position: absolute;
-      top: 0.5rem;
-      left: 0.5rem;
+      top: 0%;
+      left: 0%;
       z-index: 300;
       opacity: 0;
       transition: all 0.5s;
@@ -180,11 +178,10 @@
   }
 
   &__img {
-    display: block;
-    max-width: 35rem;
-    max-height: 25rem;
+    width: 35rem;
+    height: 22rem;
     border-radius: 0.5rem;
-    border: 5px solid $color-white;
+    outline: 5px solid $color-white;
     margin-bottom: 1.3rem;
   }
 
@@ -197,102 +194,50 @@
     color: rgb(82, 82, 82);
   }
 }
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-  z-index: 100;
-  transition: all 0.5s;
-}
-
-.form {
-  position: relative;
-  color: white;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 200;
-  transform: translate(-50%, -50%);
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(61, 61, 61, 0.5),
-    rgba(71, 36, 36, 0.5),
-    rgba($color-primary, 0.6)
-  );
-  border-radius: 0.5rem;
-  padding: 6rem;
-  line-height: 5;
-  min-width: 55rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  &__title {
-    font-size: 3.5rem;
-    font-weight: 600;
-    text-transform: capitalize;
-  }
-  &__box {
-    margin-bottom: 4rem;
-  }
-  &__name {
-    font-size: 1.9rem;
-    font-weight: 600;
-    &--input {
-      padding: 0.5rem;
-      width: 25rem;
-      transform: translateX(4rem);
-    }
-  }
-  &__password {
-    font-size: 1.9rem;
-    font-weight: 600;
-    &--input {
-      transform: translateX(0.4rem);
-
-      padding: 0.5rem;
-      width: 25rem;
-    }
-  }
-  &__btn {
-    border: none;
-    filter: brightness(90%);
-    &--forgot {
-      font-size: 1.4rem;
-      margin-right: 3rem;
-      color: white;
-    }
-    &--create {
-      font-size: 1.4rem;
-      color: white;
-    }
-  }
-}
-.xicon {
-  position: absolute;
-  top: 8%;
-  right: 8%;
-  width: 2rem;
-  height: 2rem;
-  fill: white;
-  transform: rotate(45deg);
-  cursor: pointer;
-}
-.xmenu-icon {
-  position: absolute;
-  top: 8%;
-  right: 8%;
-  width: 2rem;
-  height: 2rem;
-  fill: white;
-  transform: rotate(45deg);
-  cursor: pointer;
-}
 .hidden {
   display: none;
+}
+
+@media (max-width: 900px) {
+  .our-works {
+    padding: 8rem 4rem;
+    &__title {
+      font-size: 4rem;
+      text-transform: capitalize;
+      margin-bottom: 8rem;
+      margin-top: 3rem;
+      text-align: center;
+      color: $color-ofwhite;
+      font-family: "Bebas Neue", cursive;
+      font-weight: 400;
+    }
+  }
+  .project {
+    flex-direction: column;
+    &__img {
+      margin-bottom: 3rem;
+      margin-left: 3rem;
+    }
+    &__img--2 {
+      margin-left: 3rem;
+    }
+    &__paragraph {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+  }
+  .project--2 {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 500px) {
+  .our-services {
+    flex-wrap: wrap;
+    .service-box {
+      margin: 2rem;
+    }
+  }
 }

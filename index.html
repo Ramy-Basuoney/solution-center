@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="###" />
-    <meta name="keywords" content="###" />
+    <meta name="description" content="Information Technology Company" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./img/logo.png" />
     <title>Solution Center | Information Technology Company</title>
@@ -12,8 +11,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -26,8 +23,13 @@
   </head>
   <body>
     <header class="header" id="header">
-      <div class="nav-container">
-        <img src="./img/logo.png" class="header__logo" alt="logo" />
+      <div class="header__container">
+        <div class="header__bars">
+          <i class="fas fa-bars nav-icon"></i>
+        </div>
+        <div class="header__logo">
+          <img src="./img/logo.png" alt="logo" />
+        </div>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -50,26 +52,15 @@
             </li>
           </ul>
         </nav>
-        <form class="search">
-          <input type="text" class="search__input" />
-          <button class="search__btn">
-            <svg class="search__icon">
-              <use xlink:href="./img/svg/sprite.svg#icon-search"></use>
-            </svg>
-          </button>
-        </form>
         <a class="btn signin" href="#">sign in</a>
-        <div>
-          <i class="fas fa-bars nav-icon"></i>
-        </div>
       </div>
       <div class="greating">
         <div class="greating__message">
-          <h2 class="greating__title">
+          <h2>
             Welcome to our website<br />
             solution center
           </h2>
-          <p class="greating__paragraph">
+          <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
             perferendis rerum ab atque quaerat aperiam, dolore, nesciunt
             asperiores deleniti fugit enim illo et aut voluptatem vel quod
@@ -200,7 +191,6 @@
         />
       </div>
 
-      <!-- ///////////////////////////////////////////////////////////////////// -->
       <div class="project hide-project hidden">
         <img
           src="./img/projects/project-3.jpg"
@@ -275,7 +265,7 @@
           alt="project-4"
         />
       </div>
-      <!-- ///////////////////////////////////////////////////////////////////// -->
+
       <div class="project__btn">
         <a href="#" class="btn project__btn--hover">see more</a>
       </div>
@@ -357,6 +347,7 @@
         </div>
       </div>
     </section>
+
     <footer class="footer" id="footer">
       <div class="footer__box">
         <div class="footer__content">
@@ -405,7 +396,7 @@
               <h3 class="footer__title">contact us</h3>
               <li class="footer__item">
                 <a href="#" class="footer__link"
-                  >Email : <span>magedemam1@gmail.com</span></a
+                  >Email : <span>username@gmail.com</span></a
                 >
               </li>
               <li class="footer__item">
@@ -414,10 +405,10 @@
                 >
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">tele : 0224543398</a>
+                <a href="#" class="footer__link">tele : 02874987768</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">mobile : 01000213451</a>
+                <a href="#" class="footer__link">mobile : 014848762901</a>
               </li>
             </ul>
           </div>
@@ -437,54 +428,6 @@
         <h4>Designed By : Ramy Basuonry&trade;</h4>
       </div>
     </footer>
-
-    <!-- FROM -->
-    <div class="form hidden">
-      <svg class="xicon">
-        <use xlink:href="img/svg/sprite.svg#icon-plus"></use>
-      </svg>
-      <h3 class="form__title">sign in your account</h3>
-      <form class="form__box">
-        <label for="email" class="form__name">Email</label>
-        <input type="text" class="form__name--input" id="email" />
-        <br />
-        <label for="password" class="form__password">Password</label>
-        <input type="password" class="form__password--input" id="password" />
-        <br />
-        <button class="btn form__btn">sign in</button>
-      </form>
-      <div class="form__links">
-        <a href="#" class="form__btn--forgot">forgot the password</a>
-        <a href="#" class="form__btn--create">create new account</a>
-      </div>
-    </div>
-    <div class="overlay hidden"></div>
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu">
-      <svg class="xmenu-icon">
-        <use xlink:href="img/svg/sprite.svg#icon-plus"></use>
-      </svg>
-      <ul class="mobile-menu__list">
-        <li class="mobile-menu__item">
-          <a href="#header" class="mobile-menu__link">home</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#about" class="mobile-menu__link">about us</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#our-works" class="mobile-menu__link">our works</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#categories" class="mobile-menu__link">categories</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#best-seller" class="mobile-menu__link">best seller</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#footer" class="mobile-menu__link">contact us</a>
-        </li>
-      </ul>
-    </div>
 
     <script src="./js/app.js"></script>
   </body>
